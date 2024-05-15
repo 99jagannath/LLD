@@ -19,7 +19,7 @@ class Board:
         if self.board_map[row - 1][column - 1] is not None:
             print("Invalid move.....! Some other value is already there")
             return False
-        self.board_map[row - 1][column - 1] = playingPiece.pieceType
+        self.board_map[row - 1][column - 1] = playingPiece.pieceType.value
         return True
         
         
